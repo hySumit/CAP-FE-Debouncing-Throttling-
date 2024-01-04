@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>OMDB MOVIE APP I</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <!-- <h1>OMDB Movie App</h1> -->
+        <h2>Home</h2>
+        <h2>TV</h2>
+        <h2>Movies</h2>
+        <h2>Sports</h2>
+    
+        <div class="searchbar">
+
+            <input type="text" id="search" placeholder="Enter a movie Name" oninput="debounce(MakeApiCall,1000)" />
+            <div id="searchContainer"></div>
+    
+            <button onclick="loadData()"><img src="./search_861627.png" alt=""></button>
+        </div>
+
+
+    </div>
+
+    <!-- <div id="container"></div> -->
+</body>
+
+<script src="./script.js"></script>
+</html>
